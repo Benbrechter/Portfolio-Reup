@@ -1,9 +1,7 @@
 import { Link } from 'react-router-dom';
-import logo from '../pictures/logo.png'
-import user from "../pictures/userIcon.png"
-import navImg from '../pictures/nav-img.png'
-import instagram from '../pictures/instagram.png'
-import wallet from '../pictures/wallet.png'
+import logo from '../../pictures/logo.png'
+import navImg from '../../pictures/nav-img.png'
+// import instagram from '../../pictures/instagram.png'
 
 
 
@@ -29,11 +27,6 @@ function Navbar() {
                        <img src= {logo} alt="this will be the logo" />
                     </div>
                 </Link>
-                <div className='nav-links-container'>
-                    <Link to = '/login'><img src= {user} alt=""  style={{height: "35px", margin: '10px'}}/></Link>
-                <a href="https://www.instagram.com/benbeejammin/"><img src = {instagram} alt="this will route to my insta"  style={{height: "35px", margin: '10px'}}/></a>
-                <a href="https://account.venmo.com/u/Ben-Brechter"><img src= {wallet} alt="This will link you to my venmo"  style={{height: "35px", margin: '10px'}} /></a>
-                </div>
                 
 
             </div>
@@ -41,9 +34,8 @@ function Navbar() {
            
             <ul className='navbar-ul'>
                 <li><Link to = '/' className='nav-h1'>Home</Link> </li>
-                <li><Link to = '/writings'className='nav-h1'>This Weeks Story</Link> </li>
-                <li><Link to = '/prevWriting'className='nav-h1'>Previous Weeks Story</Link> </li>
-                <li><Link to = '/Iphone' className='nav-h1'>Shot on iphone</Link> </li>
+                <li><Link to = '/Portfolio'className='nav-h1'>Portfolio</Link> </li>
+                <li><Link to = '/'className='nav-h1'>Contact</Link> </li>
             </ul> 
             </nav>
             {/* sidebar -------------------------------------------------- */}
@@ -59,19 +51,15 @@ function Navbar() {
             </div>
             </Link>
 
-              <Link to= '/login' >
-                <img src= {user} alt="" style={{height: '24px', marginTop: '15px', marginRight: '10px'}} />
-            </Link>  
-
             <div className='sidebar'>
                 <div onClick={ () => closeSidebar()}>
                 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg> 
                 </div>
                 <ul className='sidebar-ul'>
                     <li style={{marginBottom: '10px'}}><Link to = '/' className='sidebar-li'>Home</Link> </li>
-                    <li style={{marginBottom: '10px'}}><Link to = '/writings'className='sidebar-li'>This Weeks Story</Link> </li>
-                    <li style={{marginBottom: '10px'}}><Link to = '/prevWriting'className='sidebar-li'>Previous Weeks Story</Link> </li>
-                    <li style={{marginBottom: '10px'}}><Link to = '/Iphone' className='sidebar-li'>Shot on iphone</Link> </li>
+                    <li style={{marginBottom: '10px'}}><Link to = '/Portfolio'className='sidebar-li'>Portfolio</Link> </li>
+                    <li style={{marginBottom: '10px'}}><Link to = '/'className='sidebar-li'>Contact</Link> </li>
+                    
                 </ul>
                 </div>
 

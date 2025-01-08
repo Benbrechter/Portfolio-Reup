@@ -1,6 +1,6 @@
 
 function Contact(){
-    reeturn(
+    return(
         <h1>I am Da Captian Now</h1>
     )
 }

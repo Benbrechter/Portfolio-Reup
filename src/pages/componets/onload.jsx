@@ -1,4 +1,4 @@
-import Logo from '../pictures/logo.png'
+import Logo from '../../pictures/logo.png'
 import React, { useState, useEffect } from 'react';
 
 import 'animate.css';

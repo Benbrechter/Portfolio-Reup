@@ -1,5 +1,5 @@
 
-
+import picture from '../../pictures/imgFlower.jpg'
 import { motion } from 'framer-motion';
 
 function About() {
